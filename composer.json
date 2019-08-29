@@ -1,0 +1,18 @@
+{
+    "name": "amey/project-restorant.com",
+    "description": "generating autoload",
+    "authors": [
+        {
+            "name": "amey",
+            "email": "amey88_m@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+    	"classmap":[
+    		"classes/",
+    		"controller/",
+            "model/"
+    	]
+    }
+}

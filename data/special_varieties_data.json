@@ -1,0 +1,168 @@
+[
+	
+
+	{
+		"sunday": [
+
+				{
+					"sr" : 1,
+					"menuName": "tomato soup",
+					"offer" : "Buy 1 get 1/2 Free",
+					"discount": "Rs. 10",
+					"cost" : "Rs. 300/each",
+					"pic" : "images/spv/tomato-soup.jpg"
+				},
+				{
+					"sr" : 2,
+					"menuName": "Celeriac, hazelnut & truffle soup",
+					"offer" : "Buy 2 get free 1 tomoto soup",
+					"discount": "-",
+					"cost" : "Rs. 115/each",
+					"pic" : "images/spv/celeriac-soup.jpg"
+				},
+				{
+					"sr" : 3,
+					"menuName": "indian spiced tomato soup",
+					"offer" : "Buy 1 get 1/2 Free",
+					"discount": "Rs. 10",
+					"cost" : "Rs. 300",
+					"pic" : "images/spv/hot-tomato-soup.jpg"
+				},
+				{
+					"sr" : 4,
+					"menuName": "mulligatawny soup",
+					"offer" : "sorry no offer available",
+					"discount": "Rs. 10.00",
+					"cost" : "Rs. 99",
+					"pic" : "images/spv/mulligatawny-soup.jpg"
+				}
+
+			],
+
+		"saturday": [
+				{
+					"sr" : 1,
+					"menuName": "Jambo samosa pav",
+					"offer" : "Buy 1 get 1 Free = 2",
+					"discount": "Rs. 2",
+					"cost" : "Rs. 20/pp",
+					"pic" : "images/fruits-2565817_1920.jpg"
+				},
+				{
+					"sr" : 2,
+					"menuName": "samosa with sweet potatos",
+					"offer" : "Buy 2 get 1 free = 3 ",
+					"discount": "Rs. 5",
+					"cost" : "Rs. 18/pp",
+					"pic" : "images/fruits-2565817_1920.jpg"
+				},
+				{
+					"sr" : 3,
+					"menuName": "crush samosa with papar shew",
+					"offer" : "sorry no offer available",
+					"discount": "Rs. 2",
+					"cost" : "Rs. 25/pp",
+					"pic" : "images/fruits-2565817_1920.jpg"
+				}
+				
+			],
+
+		"friday": [
+				{
+					"sr" : 1,
+					"menuName": "fish cury",
+					"offer" : "Buy 1 + 1 soup + 1 timepass free for today only",
+					"discount": "-",
+					"cost" : "Rs. 120",
+					"pic" : "images/spv/fish-soup.jpg"
+				}
+			],
+
+		"dailyspecial":[
+				{
+					"sr" : 1,
+					"menuName": "veg franky",
+					"offer" : "no offer available",
+					"discount": "-",
+					"cost" : "Rs. 40",
+					"pic" : "images/spv/veg-franky.jpg"
+				},
+				{
+					"sr" : 2,
+					"menuName": "fries food",
+					"offer" : "2 type of free sauce",
+					"discount": "-",
+					"cost" : "Rs. 10",
+					"pic" : "images/spv/fries-food.jpg"
+				},
+				{
+					"sr" : 3,
+					"menuName": "pizza",
+					"offer" : "buy 2 Get 1 Free",
+					"discount": "Rs. 5 with 2 purchase",
+					"cost" : "Rs. 99/pp",
+					"pic" : "images/spv/pizza.jpg"
+				},
+				{
+					"sr" : 4,
+					"menuName": "burger",
+					"offer" : "no offer available",
+					"discount": "-",
+					"cost" : "Rs. 99",
+					"pic" : "images/spv/burger.jpg"
+				},
+				{
+					"sr" : 5,
+					"menuName": "coffee",
+					"offer" : "no offer available",
+					"discount": "-",
+					"cost" : "Rs. 12",
+					"pic" : "images/spv/coffee.jpg"
+				},
+				{
+					"sr" : 6,
+					"menuName": "lemon tea",
+					"offer" : "no offer available",
+					"discount": "-",
+					"cost" : "Rs. 25",
+					"pic" : "images/spv/tea.jpg"
+				},
+				{
+					"sr" : 7,
+					"menuName": "sabudana vada",
+					"offer" : "no offer available",
+					"discount": "-",
+					"cost" : "Rs. 35",
+					"pic" : "images/spv/sabudana-vada.jpg"
+				},
+				{
+					"sr" : 8,
+					"menuName": "idli with dosa",
+					"offer" : "no offer available",
+					"discount": "Rs. 5 off",
+					"cost" : "Rs. 49",
+					"pic" : "images/spv/dosa.jpg"
+				},
+				{
+					"sr" : 9,
+					"menuName": "medu vada (only if oredered now)",
+					"offer" : "no offer available",
+					"discount": "Rs. 5 off",
+					"cost" : "Rs. 45",
+					"pic" : "images/spv/medu-vada.jpg"
+				},
+				{
+					"sr" : 10,
+					"menuName": "dahi kachori",
+					"offer" : "no offer available",
+					"discount": "-",
+					"cost" : "Rs. 42",
+					"pic" : "images/spv/dahi-kachori.jpg"
+				}
+		]
+
+	}
+
+
+
+]

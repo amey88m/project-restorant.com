@@ -1,0 +1,77 @@
+@import "../0-plugins/fontawesome/scss/font-awesome"
+
+.offer-img
+	width: 100%
+	padding: 1em 0
+
+.order-now
+	display: block
+	border-top: 1px dotted #999
+	margin-top: .3em
+.offer-box
+	cursor: pointer
+	position: absolute
+	width: 50px
+	height: 50px
+	background-color: #000
+	position: fixed
+	right: 10px
+	bottom: 10px
+	z-index: 9
+	border-radius: 50%
+	.ico-wrap
+		display: none
+		position: relative
+		width: 100%
+		display: table
+		height: 100%
+		text-align: center
+		.close
+			color: $white
+			display: table-cell
+			vertical-align: middle
+
+
+.special-offer-sec
+	position: fixed
+	right: 10px
+	bottom: 50px
+	border: 1px solid #888
+	+box-shadow(-11px 1px 14px 0px rgba(0, 0, 0, 0.3))
+	z-index: 9
+	.special-offer-aside
+		border: 1px dotted #999
+		+border-radius(50)
+		z-index: 9
+		background-color: $white
+		min-height: 100px
+		width: 320px
+		overflow: hidden
+	.asidepos
+		position: absolute
+		right: 10px
+		bottom: 10px
+		.special-offer-aside-title
+			font-family : $font-dosis
+			font-weight: 100
+			color: $red
+			text-transform: capitalize
+		.special-offer-desc
+			padding: .3em 1em
+			margin: 0
+			font-family : $font-dosis
+
+
+.offer-box-chage-color
+	background-color: $white
+	+transition(all .6s ease)
+	border: 1px dotted #999
+	.close
+		color: #999 !important
+
+.text-center
+	text-align: center
+
+.special-offer-hide
+	display: none !important
+	animation-name : bounceIn

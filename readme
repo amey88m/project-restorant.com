@@ -1,0 +1,28 @@
+## project-restorant.com ##
+
+################################################
+
+http://127.0.0.1/project-restorant.com/
+http://127.0.0.1/project-restorant.com/admin
+
+#################################################
+
+
+################## JSON #########################
+
+http://127.0.0.1/project-restorant.com/data/img_data.json
+http://127.0.0.1/project-restorant.com/data/special_varieties_data.json
+
+################################################
+
+about: This is my simple website on restorant. I created it using grid system.
+
+I gave 'search option' to customer so that they can access their love one items.
+
+customer can read about our restorant's food and easily place their own order by making a phone or through online.
+
+* more and enough I did `special weekly offer` for all customers called 'Buy 1 get 1 free'.
+
+* free food tip weekly (fftw) for prior customer.
+
+* customer can order their food from `our special verieties` tabs were each day has it`s special offer.

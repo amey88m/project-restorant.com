@@ -1,0 +1,39 @@
+// mixin
+=user($sele)
+	-webkit-user-select : $sele
+	-moz-user-select : $sele
+	user-select : $sele
+
+=text($arg)
+	text-shadow : $arg
+	-webkit-text-shadow : $arg
+	-moz-text-shadow : $arg
+
+=box-shadow($shadow...)
+	-webkit-box-shadow : $shadow
+	-moz-box-shadow : $shadow
+	box-shadow : $shadow	
+
+=box($size)
+	-webkit-box-sizing : $size
+	-moz-box-sizing : $size
+	box-sizing : $size
+
+=translateY($y)
+	-webkit-transform : translateY($y)
+	-moz-transform : translateY($y)
+	transform : translateY($y)
+
+=border-radius($x)
+	-webkit-border-radius: $x
+	-moz-border-radius: $x
+	border-radius: $x
+=transition($transition...)
+	-webkit-transition : $transition
+	-moz-transition : $transition
+	transition : $transition
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	border-radius: $radius
+	

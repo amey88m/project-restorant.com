@@ -1,0 +1,88 @@
+@keyframes bounceIn
+	0%
+		opacity: 0
+		+translateY(-40px)
+	50%
+		opacity: 0
+		+translateY(140px)
+	100%
+		+translateY(0px)
+		opacity: 1
+
+
+@keyframes danceIn
+	0%
+		+translateY(0px)
+	25%
+		+translateY(-4px)
+		color: $red
+	50%
+		+translateY(0px)
+		color: $black
+	100%
+		+translateY(-4px)
+		color: $white
+
+
+@keyframes fadeIn
+	0%
+		opacity: 0
+	50%
+		opacity: .5
+	100%
+		opacity: 1
+
+
+@keyframes fadeOut
+	0%
+		opacity: 1
+	100%
+		opacity: 0		
+
+
+@keyframes slideDown
+	0%
+		+translateY(-200px)
+	50%
+		+translateY(200px)
+	100%
+		+translateY(0px)
+		
+
+
+%anim
+	animation-fill-mode: both
+	animation-duration: 1s
+	
+
+.bounceIn
+	animation-name: bounceIn
+	animation-iteration-count: 1
+	@extend %anim
+
+.danceIn
+	animation-name: danceIn
+	animation-iteration-count: infinite
+	@extend %anim
+
+.fadeIn
+	animation-name: fadeIn
+	animation-iteration-count: 1
+	+transition(all .6s ease)
+	@extend %anim
+
+.fadeOut
+	animation-name: fadeOut
+	animation-iteration-count: 1
+	+transition(all .6s ease)
+	@extend %anim
+
+
+.slideDown
+	animation-name: slideDown
+	animation-duration: 2s
+	animation-iteration-count: 1
+	animation-fill-mode: both
+	+transition(all 0.9s cubic-bezier(0.22, 0.61, 0.36, 1))
+
+

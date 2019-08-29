@@ -1,0 +1,513 @@
+// slider
+#superslider
+	border : 0px
+	+box(border-box)
+	overflow : hidden
+	
+	ul
+		display  : block
+		overflow: hidden
+
+		li
+			float : left
+			position : relative
+			height : auto
+			overflow : hidden
+
+			img
+				width : 100%
+				height : auto
+
+.superslider ul li.active
+	display : block !important
+
+
+
+%arrow
+	background-color : $white			
+	color : $black
+	display : block
+	font-size : $font-base-size
+	padding : 1em
+	position : relative
+	text-decoration : none
+
+.superslider
+	position : relative
+		
+	.navigation
+		position : absolute
+		top : 50%
+		left : 0
+		right : 0
+		overflow : hidden
+		width : 100%
+		z-index : 9
+
+		.left
+			float : left
+			@extend %arrow
+
+		.right 
+			float : right
+			@extend %arrow
+
+
+.slider-content
+	.slider-text
+		background-color : rgba(0,0,0,0.55)
+		border : 0px
+		bottom : 0
+		left : 0
+		position : absolute
+		top : 50%
+		text-align : center
+		width : 100%
+		
+		span 
+			font-size : $font-base-size
+			margin : 20px 5px 
+			text-transform : capitalize
+
+		span.w1
+			color : $blue-light
+			line-height : 2em
+
+		span.w2
+			color : $pink-light
+			line-height : 2em
+
+		h1
+			font-family : $font-saira
+			color : $white
+			text-transform : capitalize
+			text-shadow: 4px 4px 7px #000
+
+		p
+			color : $white
+			display : none
+			font-size : 1.3em
+			font-family : $font-saira
+			margin : 0
+
+
+
+// 2
+
+.freshFoodWrapper
+	
+	position : relative
+	margin : 20px
+	width : calc(100% - 60px)
+
+	.ingrediants-wrapper	
+		margin : 20px
+		position : relative
+		width : calc(100% - 40px)
+
+		.ingrediants-div
+			background-color : $green-bg-light
+			padding: 20px 0 20px 20px
+			
+			
+			.head
+				position : relative
+				
+				&:before
+					content : ""
+					border-bottom : 62px solid #a3f749
+					border-right : 35px solid transparent
+					right : -34px
+					top : 0
+					position : absolute
+
+				&:after
+					content : ""
+					border-top : 62px solid #a3f749
+					border-right : 35px solid transparent
+					right : -34px
+					bottom : 0px
+					position : absolute
+
+				h1
+					font-family : $font-dosis
+					font-size : $font-base-size+1
+					line-height : $font-base-line-height + 0.5
+					color : $white
+					text-transform : uppercase
+				span
+					color : $pink-light
+					font-family : $font-dosis
+					font-size : $font-base-size+0.2
+					line-height : $font-base-line-height + 0.5
+
+		.images-section
+			display : grid
+			grid-template-columns : 1fr 1fr 1fr
+			grid-template-rows : 1fr 1fr
+			grid-gap : 5px
+		
+			img
+				width : 100%
+				min-height : 100%
+	
+	.image-wraper
+		position : relative
+		overflow : hidden
+		height : 100%
+
+		&:after
+			background-color : rgba(100,0,0,0.4)
+			bottom : 0
+			content : ""
+			left : 0
+			position : absolute
+			top : 0
+			width : 100%
+
+
+
+// tweet
+.tweets-section 
+	display : none
+	
+	.tweet-title-groups
+		background-color : tint($blue-dark, 50%)
+		padding : 1em 1em
+	
+	section.tweet
+		min-height : 100%
+
+	.btn-load-more
+		bottom : 0
+		color : $white
+		cursor : pointer
+		position : absolute
+		right : 10%
+		text-transform : uppercase
+		text-align : center
+		font-size : $font-base-size
+		line-height : 1em
+	.btn-tweeter-info
+		background-color : $orange-1
+
+// btn style
+.btn
+	border : 0
+	padding : 0.8em 2em
+	font-size : $font-base-size 
+	
+	&:hover, &:focus
+		outline : 0
+
+.fftw-submit-btn-style
+	border: 0
+	background: linear-gradient(5deg,  #fff134, #fff)
+	color: $black
+	font-size: 1em
+	height: 45px
+	line-height: 45px
+	padding: 0
+	width: 150px
+
+
+// our-resto
+.resto-img
+	background-image : url('../images/spring-rolls-2097978_1920.jpg')
+	background-repeat : no-repeat
+	background-size: cover
+	background-position: center center
+
+.our-resto
+	min-height : 70vh
+	position : relative
+	margin-top : 0
+	width : 100%
+
+	.our-resto-div
+		//width : calc(100% - 20%)
+		background-color : rgba(255,255,255,0.2)
+		margin-left : auto
+		margin-right : auto
+		padding : 2em 4em
+		width : fit-content
+
+
+	.title	
+		
+		h1
+			color : $black
+			font-size : 3em
+			line-height : 1.4em
+			text-transform : uppercase
+
+		h1.h1
+			position : relative
+
+			&:after
+				content : ""
+				width : 26%
+				height : 6px
+				background-color : $orange-1
+				position : absolute
+				left : 170px
+				top : 77px
+				+translateY(-5px)
+
+			&:first-letter
+				font-size : 2em
+
+//resto-desc
+.resto-desc
+	background-color : transparent
+	margin : 0 auto
+	+translateY(-70px)
+	width : calc(100% - 40%)
+
+	.desc
+		padding : 1em
+		position : relative
+
+		p
+			color : #888585
+			font-size : $font-base-size + .1
+			font-family : $font-abel
+			line-height : 1.8em
+
+			a
+				color : $orange-1
+
+
+// divi for divider
+.divi
+	background-color : $orange-1
+	height : 6px
+	margin : 20px auto
+	padding : 0
+	width : 12%
+
+
+// serarch for menu - items
+.menu-search-box
+	display : block
+	margin : 6rem auto 0 auto
+	position : relative
+	display : flex
+	width : 50%
+
+	.searchmyitems
+		background-color : #f2f2f2
+		border : 0
+		color : $txt-primary
+		font-size : $font-base-size
+		padding : 1em 0.4em
+		position : relative
+		text-align : left
+		width : 100%
+		+box-shadow(-11px 1px 14px 0px rgba(0, 0, 0, 0.3))
+		
+		&:hover,&:focus
+			outline : 0
+			border : 0
+
+	.search-menu-btn
+		color : $txt-primary
+		background-color : $orange-1
+		position : absolute
+		right : -40px
+		top : 4px
+
+.spmhide
+	display: none
+
+
+//weekly-more-salable-item  
+//veg and non-veg only display 1 item.. click to view more 
+%itemsimg
+	background-image : url('../images/nem-2856543_1920.jpg')
+	background-repeat : no-repeat
+	background-size : cover
+	background-position : center center
+	display : table
+	position : relative
+
+%itemsdiv
+	border : 0
+	background-color : tiny($orange-1, 39%)
+
+%itemsDivCalc
+	margin : 70px auto
+	width : calc(100% - 140px)
+	height : calc(50vh - 140px)
+
+%itemWrap
+	height : 100%
+	overflow : hidden
+
+.weekly-most-fam-items
+	position : relative
+	display : grid
+	grid-template-columns : 1fr
+	grid-template-rows : 1fr 1fr
+	grid-gap : 0px
+	margin-bottom : 2em
+
+	.veg-item-img
+		background-image : url('../images/nem-2856543_1920.jpg')
+		@extend %itemsimg
+		height : 50vh
+		
+		.item-wrap
+			@extend %itemWrap
+
+			.veg-item
+				@extend %itemsDivCalc
+				@extend %itemsdiv
+
+	.non-veg-item-img
+		background-image : url('../images/prawns-1920.jpg')
+		@extend %itemsimg
+		height : 50vh
+		
+		.item-wrap
+			@extend %itemWrap
+
+		.non-veg-item
+			@extend %itemsDivCalc
+			@extend %itemsdiv
+
+
+
+.weekly-most-fam-items
+	.title
+		+text(1px 2px 1px #111)
+		color : $txt-default
+		font-family : $font-abel
+		font-size : $font-base-size + 2
+		text-align: center
+
+	.item-desc
+		p
+			color : $white
+			font-family : $font-abel
+			font-size : $font-base-size + .1
+			line-height : 1.8em
+			margin : 0
+			padding : 0
+			text-align : left				
+			display : none
+
+
+
+// special items days
+.ourSpecialItems
+	position : relative
+
+	.title
+		display : block
+		margin : 0 auto
+		margin-bottom : 3.4em
+		position : relative
+		width : fit-content
+
+		h1.h1
+
+			&:first-letter
+				font-size : 2em
+			&:after
+				content : ""
+				width : 26%
+				height : 6px
+				background-color : $orange-1
+				position : absolute
+				left : 120px
+				top : 77px
+
+		h1
+			font-size : 3em
+			color : $black
+
+	.specialItems-days
+		position : relative
+
+		ul
+			display : block
+			margin : 0 auto
+			width : fit-content
+			li
+				display : inline-block
+				border-right :  1px dotted $black
+				padding : 1em - 0.3
+				cursor: pointer
+
+				&:last-child
+					border : 0
+
+				a
+					color : $black
+					text-transform : uppercase
+					font-size : $font-base-size - 0.2					
+
+.specialItems-days-tab-active
+	a
+		color : orange !important
+
+.specialItem-menus-wrapper
+	display : block	
+	margin : 0 auto
+	width : fit-content
+
+.sp-menus
+	display: none
+
+.spm-menu-active
+	display: block
+
+table
+	//+box-shadow(1px 1px 4px rgba(0,0,0,0.2))
+	border-collapse: collapse
+	display : table
+	+user(none)
+
+	th	
+		border : 1px dotted $blue-dark
+		color : $blue-dark
+		font-weight : 100
+		padding : .75rem
+		text-transform : capitalize
+	td
+		border-bottom : 1px dotted $blue-dark
+		padding : 1em 
+
+.red
+	color :	$red
+
+// menu load more btn
+.btn-load-day-menu	
+	background-color : $orange-1
+	color : $white
+	cursor : pointer
+	display: block
+	margin : 2em auto
+	+border-bottom-radius(2px)
+	+border-left-radius(2px)
+	+border-top-radius(2px)
+	+border-right-radius(2px)
+
+
+//footer
+footer
+	position : relative
+	.footer-body
+		background-color : $green-bg-light
+		width : 100%
+		.footer-content
+			display : block
+			padding : 1em
+			margin : 0 auto
+			width : fit-content
+			span
+				color : $white
+				line-height : 2em
+
+

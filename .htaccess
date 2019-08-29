@@ -1,0 +1,19 @@
+
+Options -Indexes
+
+
+<IfModule mod_rewrite.c>
+
+	RewriteEngine on
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-fs
+
+	RewriteRule ^([^/]+)$ index.php?url=$1 [nc,qsa]
+	
+</IfModule>
+
+
+
+
+#Deny all
+

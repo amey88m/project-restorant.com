@@ -1,0 +1,26 @@
+@import "0-plugins/plugins-dir"
+@import "2-module/module-dir"
+
+
+
+
+
+.scroll-style::-webkit-scrollbar
+	width: 12px
+	background-color: #F5F5F5
+.scroll-style::-webkit-scrollbar-track
+	+box-shadow(inset 0 0 6px rgba(0,0,0,0.3))
+	background-color: #F5F5F5
+.scroll-style::-webkit-scrollbar-thumb
+	background-color: #999
+	+border-radius(12px)
+
+body::-webkit-scrollbar
+	width: 12px
+	background-color: #F5F5F5
+body::-webkit-scrollbar-track
+	+box-shadow(inset 0 0 6px rgba(0,0,0,0.3))
+	background-color: #a3f749
+body::-webkit-scrollbar-thumb
+	background-color: #fff
+	+border-radius(12px)
