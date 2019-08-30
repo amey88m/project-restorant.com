@@ -14,15 +14,15 @@ let specvtabs = (function(){
 			},
 			getTabIndex:function(t)
 			{	
-			
-				// remove all 
+				let target = specvtabs.getTarget(t);
+				
 				for(var i=0; i<spmenus.length ; i++){
 					spmenus[i].classList.remove('spm-menu-active');
 					spmenus[i].classList.remove('bounceIn')
 				}
 
 				li.map((tab,i)=>{
-					
+						
 						if(t.target == tab){
 							tab.classList.add('specialItems-days-tab-active');
 								if(t.target.classList.contains('specialItems-days-tab-active') == true)
@@ -68,7 +68,6 @@ veritiesul.onclick = specvtabs.getTabIndex;
 			{
 				if(xhr.readyState == 4 && xhr.status == 200 )
 					parse_data = JSON.parse(xhr.responseText);
-					
 			}
 			xhr.send(null)
 	}
@@ -98,27 +97,29 @@ veritiesul.onclick = specvtabs.getTabIndex;
 
 	function eventData(data,start,limit)
 	{
-
+		
 		let res_data = [], output, rows, td, col_sr, col_name, col_offer, col_dis, col_cost, col_pic, img;
 		
 		for(let i=start; i<start+limit; i++)
 		{
-
-			// check to day's & fetch data according to day
+			
+			// check day's & fetch data according to day
 			if(day == "sunday")
-				res_data.push(data[0].sunday[i]);
+				res_data.push(data[0].sunday[i])
 			else if(day == "saturday")
-				res_data.push(data[0].saturday[i]);
+				res_data.push(data[0].saturday[i])
 			else if(day == "friday")
-				res_data.push(data[0].friday[i]);
+				res_data.push(data[0].friday[i])
 			else if(day == "allday")
-				res_data.push(data[0].dailyspecial[i]);
+				res_data.push(data[0].dailyspecial[i])
+			
 		}
 
-			// loop through result-div and get target div to display result 
+			// loop through result-div table and get targeted resule-div to display result in
 			let respdata = Array.prototype.slice.apply(document.querySelectorAll('.tb_jdata'));
 			let arr = [];
 			respdata.map((t)=>{
+			
 				if(day == t.getAttribute('data-response'))
 					arr.push(t)
 			})
@@ -126,8 +127,8 @@ veritiesul.onclick = specvtabs.getTabIndex;
 
 				res_data.map((res,i)=>{
 					
-					rows = arr[i]
-					rows = rows.insertRow();
+					let table = arr[i]
+					rows = table.insertRow(i);
 					
 					col_pic = rows.insertCell('<td></td>');
 					col_pic.innerHTML = "<img src="+res.pic+" height='40px'>";
@@ -142,12 +143,8 @@ veritiesul.onclick = specvtabs.getTabIndex;
 					col_sr = rows.insertCell('<td></td>');
 					col_sr.innerHTML = res.sr;
 					pg_start++;
-					// pg_start = (pg_start+limit);
-					
+
 				});
-		
-		
-		// pg_start = pg_start+limit;
 		
 
 
