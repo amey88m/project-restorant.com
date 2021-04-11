@@ -45,7 +45,8 @@ veritiesul.onclick = specvtabs.getTabIndex;
 
 (function(){
 
-
+	"use strict";
+	
 	let loadMoreBtn = document.querySelector('.btn-load-day-menu'),
 		tb_jdata 	= document.querySelector('.tb_jdata');
 
