@@ -25,6 +25,6 @@ Route::set_route('fftw');
 
 Route::set_route('logout');
 
-
+Route::set_route('admin_panel');
 
 ?>
